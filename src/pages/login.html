@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./../../src/assets/icon/graduate.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="login__box">
+        <div class="login__box1">
+            <a href="./../../public/index.html"> <i class="fas fa-arrow-left"></i> Back </a>
+            <img src="./../assets/img/characterLogin.png" alt="" class="login__image">
+        </div>
+        <div class="login__box2">
+            <form class="form">
+                <div>
+                    <h1 class="login__box2__desc">
+                        Login to your account
+                    </h1>
+                </div>
+                <div class="login__box2__desc2">
+                    <p>
+                        Welcome to Kuliah Helper
+                    </p>
+                </div>
+                <div class="login__input">
+                    <label class="login__input__label" for="email">Email</label>
+                    <input class="login__input__input" name="email" type="text" placeholder="Email">
+                    <label class="login__input__label" for="password">Password</label>
+                    <input class="login__input__input" name="password" type="password" placeholder="Password">
+
+                    <div class="login__input__forgot">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="login__button">
+                    <button class="btn btn-primary" type="submit">Login</button>
+                </div>
+                <!-- not registered? -->
+                <div class="login__not__registered">
+                    <p>Not registered? <a href="./register.html">Create an account</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./../js/login.js"></script>
+</body>
+
+</html>

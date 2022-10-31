@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Generator</title>
+    <link rel="stylesheet" href="./../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./../../assets/icon/graduate.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                Kuliah Helper
+            </h1>
+            <!-- dark / light mode toggle -->
+            <div class="toggle-container">
+                <div class="light-icon">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div>
+                    <input type="checkbox" id="darkmode-toggle" name="theme" />
+                    <label class="toggle" for="darkmode-toggle"></label>
+                </div>
+            </div>
+            <div class="auth">
+                <button class="btn btn-primary">
+                    <a href="./../../../src/pages/login.html"> <i class="fas fa-sign-in-alt"></i> Login</a>
+                </button>
+                <button class="btn btn-secondary">
+                    <a href="./../../../src/pages/register.html"> <i class="fas fa-user-plus"></i> Register</a>
+                </button>
+                <div hidden>
+                    <button class="btn btn-primary">
+                        <a href="#"> <i class="fas fa-user"></i> Profile</a>
+                    </button>
+                    <button class="btn btn-primary">
+                        <a href="#"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="left">
+                <button class="btn btn-primary">
+                    <!-- back -->
+                    <a href="./../stressRelease.html"> <i class="fas fa-arrow-left"></i> Back</a>
+                </button>
+            </div>
+            <div class="right">
+                <h1> Drawing Box </h1>
+            </div>
+        </nav>
+        <main>
+            <div class="draw__container">
+                <section class="draw__section draw__tools">
+                    <div class="draw__row">
+                        <label for="shapes" class="title"></label>
+                        <h2 name="shapes">Shapes</h2>
+                        <ul class="draw__options">
+                            <li class="draw__option draw__tool" id="rectangle">
+                                <i class="fa fa-square active"></i>
+                                <span>Rectangle</span>
+                            </li>
+                            <li class="draw__option draw__tool" id="circle">
+                                <i class="fa fa-circle"></i>
+                                <span>Circle</span>
+                            </li>
+                            <li class="draw__option draw__tool" id="triangle">
+                                <i class="fa fa-triangle-exclamation"></i>
+                                <span>Triangle</span>
+                            </li>
+                            <div class="draw__option">
+                                <input type="checkbox" id="fill-color" name="fill-color" />
+                                <label for="fill-color">Fill Color</label>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="draw__row">
+                        <label for="shapes" class="title"></label>
+                        <h2 name="shapes">Options</h2>
+                        <ul class="draw__options">
+                            <li class="draw__option draw__tool" id="brush">
+                                <i class="fa fa-brush"></i>
+                                <span>Brush</span>
+                            </li>
+                            <li class="draw__option draw__tool" id="eraser">
+                                <i class="fa fa-eraser"></i>
+                                <span>Eraser</span>
+                            </li>
+                            <div class="draw__option">
+                                <input type="range" id="size-slider" name="size-slider" />
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="draw__row draw__colors">
+                        <label class="draw__title">Colors</label>
+                        <ul class="draw__options">
+                            <li class="draw__option draw__colors_opt selected"></li>
+                            <li class="draw__option draw__colors_opt"></li>
+                            <li class="draw__option draw__colors_opt"></li>
+                            <li class="draw__option draw__colors_opt"></li>
+                            <li class="draw__option draw__colors_opt">
+                                <input type="color" id="color-picker" name="color-picker" />
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="draw__row__btn">
+                        <button class="btn btn-primary btn-small">
+                            <a href="#"> <i class="fas fa-eraser"></i> Clean Canvas</a>
+                        </button>
+                        <button class="btn btn-primary btn-small">
+                            <a href="#"> <i class="fas fa-save"></i> Save as Image</a>
+                        </button>
+                    </div>
+                </section>
+                <section class="draw__board draw__section">
+                    <canvas></canvas>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="./../../js/darkmode.js"></script>
+    <script src="./../../js/drawing.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Generator</title>
+    <link rel="stylesheet" href="./../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./../../assets/icon/graduate.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                Kuliah Helper
+            </h1>
+            <!-- dark / light mode toggle -->
+            <div class="toggle-container">
+                <div class="light-icon">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div>
+                    <input type="checkbox" id="darkmode-toggle" name="theme" />
+                    <label class="toggle" for="darkmode-toggle"></label>
+                </div>
+            </div>
+            <div class="auth">
+                <button class="btn btn-primary">
+                    <a href="./../../../src/pages/login.html"> <i class="fas fa-sign-in-alt"></i> Login</a>
+                </button>
+                <button class="btn btn-secondary">
+                    <a href="./../../../src/pages/register.html"> <i class="fas fa-user-plus"></i> Register</a>
+                </button>
+                <div hidden>
+                    <button class="btn btn-primary">
+                        <a href="#"> <i class="fas fa-user"></i> Profile</a>
+                    </button>
+                    <button class="btn btn-primary">
+                        <a href="#"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="left">
+                <button class="btn btn-primary">
+                    <!-- back -->
+                    <a href="./../stressRelease.html"> <i class="fas fa-arrow-left"></i> Back</a>
+                </button>
+            </div>
+            <div class="right">
+                <h1> Guess The Word!</h1>
+            </div>
+        </nav>
+        <main class="gs">
+            <div class="gs__wrapper">
+                <h1>Lets Guess the Word!</h1>
+                <input type="text" id="word" class="gs__typing-input" placeholder="Enter a word">
+                <div class="gs__content">
+                    <div class="gs__inputs">
+                    </div>
+                    <div class="gs_details">
+                        <p class="hint">
+                            <b>Hint</b> :
+
+                            <span>
+
+                            </span>
+                        </p>
+                        <p class="gs__lives">
+                            <i style="color: red;" class="fas fa-heart"></i>
+                            <b>Lives</b> :
+                            <span>
+
+                            </span>
+                        </p>
+                        <p class="gs__wrong-letter">
+                            <b>Wrong Letters</b> :
+                            <span> </span>
+                    </div>
+                    <button class="btn btn-primary btn-reset">
+                        <a href="#"> <i class="fas fa-redo-alt"></i> Reset</a>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./../../js/darkmode.js"></script>
+    <script src="./../../js/./data/word.js"></script>
+    <script src="./../../js/guessWord.js"></script>
+
+</body>
+
+</html>

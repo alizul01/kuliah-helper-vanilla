@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliah Helper</title>
+    <link rel="stylesheet" href="./../src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./../src/assets/icon/graduate.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                Kuliah Helper
+            </h1>
+            <!-- dark / light mode toggle -->
+            <div class="toggle-container">
+                <div class="light-icon">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div>
+                    <input type="checkbox" id="darkmode-toggle" name="theme" />
+                    <label class="toggle" for="darkmode-toggle"></label>
+                </div>
+            </div>
+            <div class="auth">
+                <button class="btn btn-primary">
+                    <a href="./../src/pages/login.html"> <i class="fas fa-sign-in-alt"></i> Login</a>
+                </button>
+                <button class="btn btn-secondary">
+                    <a href="./../src/pages/register.html"> <i class="fas fa-user-plus"></i> Register</a>
+                </button>
+                <div hidden>
+                    <button class="btn btn-primary">
+                        <a href="#"> <i class="fas fa-user"></i> Profile</a>
+                    </button>
+                    <button class="btn btn-primary">
+                        <a href="#"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="left">
+                <button class="btn btn-primary">
+                    <a href="#"> <i class="fas fa-home"></i> Home</a>
+                </button>
+                <button class="btn btn-primary">
+                    <a href="./../src/pages/onconstruct.html"> <i class="fas fa-book-bookmark"></i> Materi</a>
+                </button>
+                <button class="btn btn-primary">
+                    <a href="./../src/pages/onconstruct.html"> <i class="fas fa-book"></i> Tugas</a>
+                </button>
+                <button class="btn btn-primary">
+                    <a href="./../src/pages/helper.html"> <i class="fas fa-hand-fist"></i> Helper</a>
+                </button>
+            </div>
+            <div class="right">
+                <button class="btn btn-secondary">
+                    <a href="./../src/pages/stressrelease.html"> <i class="fas fa-gamepad"></i> Stress Release</a>
+                </button>
+                <button class="btn btn-secondary">
+                    <a href="./../src/pages/otherWorks.html"> <i class="fas fa-question-circle"></i> Other Works!</a>
+                </button>
+            </div>
+        </nav>
+        <main>
+            <section class="hero">
+                <div class="hero__image">
+                    <img src="./../src/assets/img/character.png" alt="hero">
+                </div>
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Bring Your <strong>Study</strong> to the Next Level with <br> <strong>Kuliah Helper</strong> !
+                    </h1>
+                    <p class="hero__description">
+                        <span class="line"></span>
+                        Kuliah Helper is a website that helps you to manage your study. You can manage your study
+                        schedule, your task, and your stress relief.
+                    </p>
+                    <button class="btn btn-primary btn-medium">
+                        <a href="#"> <i class="fas fa-book"></i> Get Started </a>
+                    </button>
+                </div>
+            </section>
+            <section class="aboutUs">
+                <div class="aboutUs__container">
+                    <div class="aboutUs__box1">
+                        <img src="./../src/assets/img/studentabout.png" class="aboutUs__image" alt="">
+                    </div>
+                    <div class="aboutUs__box2">
+                        <h2 class="aboutUs__title">
+                            <strong>About Us</strong>
+                        </h2>
+                        <p class="aboutUs__description">
+                            Kuliah Helper adalah alat yang sempurna bagi mahasiswa untuk membantu mereka mengelola studi
+                            mereka. Gratis dan mudah digunakan.
+                        </p>
+                        <p class="aboutUs__description">
+                            Dengan aplikasi ini, Anda dapat mengatur jadwal belajar, tugas, dan bahkan menghilangkan
+                            stres. Dan itu tersedia 24 jam sehari, 7 hari seminggu. Jadi unduh Kuliah Helper sekarang!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="features">
+                <h1 class="features__title">
+                    <strong>Features</strong>
+                </h1>
+                <div class="features__container"></div>
+            </section>
+
+            <!-- tertimonials -->
+            <section class="testimonials">
+                <h1 class="testimonials__title">
+                    <strong>What they say?</strong>
+                </h1>
+                <div class="testimonials__container">
+                    <button class="btn btn-primary testi_prev">
+                       <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonials__box">
+
+                    </div>
+                    <button class="btn btn-primary testi_next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                Made with <i style="color: rgb(218, 70, 70);" class="fas fa-heart"></i> by <a
+                    href="https://www.github.com/alizul01">Ali Zulfikar</a>
+            </p>
+        </footer>
+    </div>
+    <script src="./../src/js/script.js"></script>
+    <script src="./../src/js/darkmode.js"></script>
+</body>
+
+</html>

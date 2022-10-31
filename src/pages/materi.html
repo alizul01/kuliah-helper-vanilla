@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Helper</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./../../src/assets/icon/graduate.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                Kuliah Helper
+            </h1>
+            <!-- dark / light mode toggle -->
+            <div class="toggle-container">
+                <div class="light-icon">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div>
+                    <input type="checkbox" id="darkmode-toggle" name="theme" />
+                    <label class="toggle" for="darkmode-toggle"></label>
+                </div>
+            </div>
+            <div class="auth">
+                <button class="btn btn-primary">
+                    <a href="./../src/pages/login.html"> <i class="fas fa-sign-in-alt"></i> Login</a>
+                </button>
+                <button class="btn btn-secondary">
+                    <a href="./../src/pages/register.html"> <i class="fas fa-user-plus"></i> Register</a>
+                </button>
+                <div hidden>
+                    <button class="btn btn-primary">
+                        <a href="#"> <i class="fas fa-user"></i> Profile</a>
+                    </button>
+                    <button class="btn btn-primary">
+                        <a href="#"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="left">
+                <button class="btn btn-primary">
+                    <a href="./../../public/index.html"> <i class="fas fa-home"></i> Home</a>
+                </button>
+                <button class="btn btn-primary">
+                    <a href="./onconstruct.html"> <i class="fas fa-book-bookmark"></i> Materi</a>
+                </button>
+                <button class="btn btn-primary">
+                    <a href="./onconstruct.html"> <i class="fas fa-book"></i> Tugas</a>
+                </button>
+                <button class="btn btn-primary">
+                    <a href="#"> <i class="fas fa-hand-fist"></i> Helper</a>
+                </button>
+            </div>
+            <div class="right">
+                <button class="btn btn-secondary">
+                    <a href="./stressrelease.html"> <i class="fas fa-gamepad"></i> Stress Release</a>
+                </button>
+            </div>
+        </nav>
+        <main>
+            <div class="helper__container">
+                <div onclick="window.location = './helper/teamgenerator.html'" class="helper__box">
+                    <h1>Random Team Generator</h1>
+                    <p>
+                        Random Team Generator adalah sebuah aplikasi yang dapat membantu anda dalam membuat tim secara
+                        acak. Kamu dapat memilih jumlah tim yang diinginkan dan jumlah anggota dalam setiap tim.
+                    </p>
+                </div>
+                <div class="helper__box">
+                    <h1>
+                        Coming soon ...
+                    </h1>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./../js/darkmode.js"></script>
+
+</body>
+
+</html>
